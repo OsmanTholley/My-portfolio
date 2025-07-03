@@ -38,79 +38,51 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Dark/Light theme toggle
-    const themeToggle = document.querySelector('.theme-toggle');
-    const themeIcon = themeToggle.querySelector('i');
-    
-    // Check for saved theme preference or use preferred color scheme
-    const savedTheme = localStorage.getItem('theme') || 
-        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    
-    if (savedTheme === 'dark') {
-        document.documentElement.setAttribute('data-bs-theme', 'dark');
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
-    }
-    
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-        
-        if (currentTheme === 'dark') {
-            document.documentElement.removeAttribute('data-bs-theme');
-            themeIcon.classList.replace('fa-sun', 'fa-moon');
-            localStorage.setItem('theme', 'light');
-        } else {
-            document.documentElement.setAttribute('data-bs-theme', 'dark');
-            themeIcon.classList.replace('fa-moon', 'fa-sun');
-            localStorage.setItem('theme', 'dark');
-        }
-    });
-
     // Form submission handling
-    // Update the form submission handler in your main.js
-const contactForm = document.getElementById('portfolio-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const subject = document.getElementById('subject').value;
-        const message = document.getElementById('message').value;
-        
-        // Format the message for WhatsApp
-        const whatsappMessage = `New Contact Form Submission:%0A%0A` +
-                               `*Name:* ${name}%0A` +
-                               `*Email:* ${email}%0A` +
-                               `*Subject:* ${subject}%0A` +
-                               `*Message:* ${message}`;
-        
-        // Open WhatsApp with the pre-filled message
-        window.open(`https://wa.me/23230497625?text=${whatsappMessage}`, '_blank');
-        
-        // Show success message
-        const successAlert = `
-            <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
-                <strong>Redirecting to WhatsApp...</strong> You'll now be able to send this message.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        `;
-        
-        this.insertAdjacentHTML('afterend', successAlert);
-        
-        // Reset form
-        this.reset();
-        
-        // Remove alert after 5 seconds
-        setTimeout(() => {
-            const alert = document.querySelector('.alert');
-            if (alert) {
-                const bootstrapAlert = new bootstrap.Alert(alert);
-                bootstrapAlert.close();
-            }
-        }, 5000);
-    });
-}
+    const contactForm = document.getElementById('portfolio-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Format the message for WhatsApp
+            const whatsappMessage = `New Contact Form Submission:%0A%0A` +
+                                   `*Name:* ${name}%0A` +
+                                   `*Email:* ${email}%0A` +
+                                   `*Subject:* ${subject}%0A` +
+                                   `*Message:* ${message}`;
+            
+            // Open WhatsApp with the pre-filled message
+            window.open(`https://wa.me/23230497625?text=${whatsappMessage}`, '_blank');
+            
+            // Show success message
+            const successAlert = `
+                <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                    <strong>Redirecting to WhatsApp...</strong> You'll now be able to send this message.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            `;
+            
+            this.insertAdjacentHTML('afterend', successAlert);
+            
+            // Reset form
+            this.reset();
+            
+            // Remove alert after 5 seconds
+            setTimeout(() => {
+                const alert = document.querySelector('.alert');
+                if (alert) {
+                    const bootstrapAlert = new bootstrap.Alert(alert);
+                    bootstrapAlert.close();
+                }
+            }, 5000);
+        });
+    }
 
     // Animate elements when they come into view
     const animateOnScroll = function(entries, observer) {
