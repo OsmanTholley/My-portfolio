@@ -1,19 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Mobile navigation toggle
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.querySelector('.navbar-collapse');
-    
-    navbarToggler.addEventListener('click', function() {
-        navbarCollapse.classList.toggle('show');
-    });
+    let navbarBsCollapse = null;
 
-    // Close mobile menu when clicking a nav link
+    if (navbarCollapse) {
+        navbarBsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+    }
+
+    if (navbarToggler && navbarBsCollapse) {
+        navbarToggler.addEventListener('click', () => {
+            navbarBsCollapse.toggle();
+        });
+    }
+
     document.querySelectorAll('.nav-link').forEach(navLink => {
         navLink.addEventListener('click', () => {
-            navbarCollapse.classList.remove('show');
+            if (navbarBsCollapse && window.innerWidth < 992) {
+                navbarBsCollapse.hide();
+            }
         });
     });
 
