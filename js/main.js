@@ -1,6 +1,72 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('year').textContent = new Date().getFullYear();
 
+    const currentUrl = window.location.href;
+
+    const shareWhatsappButton = document.querySelector('.share-whatsapp');
+    if (shareWhatsappButton) {
+        shareWhatsappButton.addEventListener('click', function() {
+            const text = encodeURIComponent("Check out this portfolio: " + currentUrl);
+            window.open(`https://wa.me/?text=${text}`, '_blank');
+        });
+    }
+
+    const chatWidget = document.querySelector('.chat-widget');
+    const chatToggle = document.querySelector('.chat-toggle');
+    const chatClose = document.querySelector('.chat-close');
+    const chatWhatsAppButton = document.querySelector('.chat-whatsapp');
+    const chatVideoButton = document.querySelector('.chat-video');
+
+    if (chatWidget && chatToggle) {
+        chatToggle.addEventListener('click', function() {
+            chatWidget.classList.toggle('open');
+        });
+    }
+
+    if (chatWidget && chatClose) {
+        chatClose.addEventListener('click', function() {
+            chatWidget.classList.remove('open');
+        });
+    }
+
+    if (chatWhatsAppButton) {
+        chatWhatsAppButton.addEventListener('click', function() {
+            const text = encodeURIComponent("Hi Osman, I visited your portfolio and would like to chat.");
+            window.open(`https://wa.me/23230497625?text=${text}`, '_blank');
+        });
+    }
+
+    if (chatVideoButton) {
+        chatVideoButton.addEventListener('click', function() {
+            const text = encodeURIComponent("Hi Osman, I visited your portfolio and would like to have a video call.");
+            window.open(`https://wa.me/23230497625?text=${text}`, '_blank');
+        });
+    }
+
+    const shareCopyLinkButton = document.querySelector('.share-copy-link');
+    if (shareCopyLinkButton) {
+        shareCopyLinkButton.addEventListener('click', function() {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(currentUrl).then(function() {
+                    const alertHtml = `
+                        <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                            Link copied. You can now paste and share it.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    `;
+                    document.querySelector('.hero .container').insertAdjacentHTML('beforeend', alertHtml);
+                    setTimeout(function() {
+                        const alert = document.querySelector('.alert');
+                        if (alert) {
+                            const bootstrapAlert = new bootstrap.Alert(alert);
+                            bootstrapAlert.close();
+                        }
+                    }, 3000);
+                });
+            }
+        });
+    }
+
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.querySelector('.navbar-collapse');
     let navbarBsCollapse = null;
