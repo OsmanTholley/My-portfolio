@@ -2,595 +2,195 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osman Tholley | Software Developer</title>
-    <meta name="description" content="Professional portfolio of Osman Tholley, showcasing networking and web development projects">
-    
-    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1020">
+    <meta name="description" content="Osman Tholley is a network engineer and web developer in Freetown, Sierra Leone. Explore selected web and networking projects.">
+    <title>Osman Tholley — Network Engineer & Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Favicon -->
     <link rel="icon" href="images/Profile-hero.jpg">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html" aria-label="Go to homepage">
-                <span class="text-primary">OT</span> Osman Tholley
-            </a>
-            <button class="navbar-toggler" type="button" aria-label="Toggle navigation" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand brand-mark" href="#home" aria-label="Osman Tholley home"><span>OT</span><b>Osman Tholley</b></a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-contact" href="#contact">Let’s talk <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero bg-gradient">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <span class="eyebrow">Network Engineer & Web Developer</span>
-                    <h1 class="display-4 fw-bold mb-3">Hi, I'm <span class="text-primary">Osman Tholley</span></h1>
-                    <h2 class="h4 text-muted mb-4 hero-subtitle">Network Engineer & Web Developer</h2>
-                    <p class="lead mb-3">
-                        I design and implement secure networks and modern websites that connect people,
-                        businesses, and ideas. I also create visual designs and branding that support those
-                        digital experiences.
-                    </p>
-                    <div class="d-flex gap-3 mb-3 flex-wrap">
-                        <a href="#work" class="btn btn-primary btn-lg px-4">
-                            <i class="fas fa-eye me-2"></i>View My Work
-                        </a>
-                        <a href="#contact" class="btn btn-outline-primary btn-lg px-4">
-                            <i class="fas fa-paper-plane me-2"></i>Contact Me
-                        </a>
+    <main id="main">
+        <section class="hero" id="home">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="container hero-content">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR SELECT PROJECTS <span class="eyebrow-location">· Freetown, Sierra Leone</span></p>
+                        <h1>I build reliable<br><span class="accent-text">digital experiences.</span></h1>
+                        <p class="hero-copy">I’m Osman — a network engineer and web developer. I connect thoughtful web experiences with the dependable technology behind them.</p>
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="#work">Explore my work <i class="fas fa-arrow-down" aria-hidden="true"></i></a>
+                            <a class="button button-quiet" href="mailto:tholleyosman87@gmail.com">Get in touch <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="hero-tags" aria-label="Areas of focus"><span>Web development</span><span>Network engineering</span><span>UI & visual design</span></div>
                     </div>
-                    <div class="d-flex flex-wrap gap-2 mb-3">
-                        <span class="badge bg-light text-dark border">Networking & Infrastructure</span>
-                        <span class="badge bg-light text-dark border">Web Development</span>
-                        <span class="badge bg-light text-dark border">WordPress & CMS</span>
-                        <span class="badge bg-light text-dark border">Graphic Design</span>
-                    </div>
-                    <div class="d-flex flex-wrap gap-2">
-                        <button type="button" class="btn btn-sm btn-outline-secondary share-whatsapp">
-                            <i class="fab fa-whatsapp me-1"></i>Share on WhatsApp
-                        </button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary share-copy-link">
-                            <i class="fas fa-link me-1"></i>Copy Portfolio Link
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <div class="card border-0 shadow-lg overflow-hidden profile-card">
-                        <img src="images/Profile-hero.jpg" class="card-img-top" alt="Osman Tholley">
-                        <div class="card-body bg-white text-center py-3">
-                            <div class="d-flex justify-content-center gap-3 social-icons">
-                                <a href="https://github.com/OsmanTholley" class="text-dark" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                                    <i class="fab fa-github fa-lg"></i>
-                                </a>
-                                <a href="https://wa.me/23230497625" class="text-success" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp contact">
-                                    <i class="fab fa-whatsapp fa-lg"></i>
-                                </a>
-                                <a href="https://facebook.com" class="text-primary" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile">
-                                    <i class="fab fa-facebook fa-lg"></i>
-                                </a>
-                            </div>
+                    <div class="col-lg-5">
+                        <div class="hero-visual">
+                            <div class="portrait-frame"><img src="images/Profile-hero.jpg" alt="Portrait of Osman Tholley" fetchpriority="high"></div>
+                            <div class="float-card float-card-code"><span class="code-dot"></span><span>Building with purpose</span><i class="fas fa-code" aria-hidden="true"></i></div>
+                            <div class="float-card float-card-location"><i class="fas fa-location-dot" aria-hidden="true"></i><span>Based in<br><b>Freetown, SL</b></span></div>
+                            <span class="visual-orbit orbit-one" aria-hidden="true"></span><span class="visual-orbit orbit-two" aria-hidden="true"></span>
                         </div>
                     </div>
                 </div>
+                <a class="scroll-cue" href="#work"><span>SCROLL TO EXPLORE</span><i class="fas fa-arrow-down" aria-hidden="true"></i></a>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="bg-light">
-        <div class="container py-5">
-            <h2 class="text-center mb-5 display-5 fw-bold section-heading">About <span class="text-primary">Me</span></h2>
-            
-            <div class="row g-4">
-                <div class="col-lg-5">
-                    <div class="card shadow-sm border-0 overflow-hidden h-100 about-card">
-                        <img src="images/Profile-.jpg" class="card-img-top" alt="Osman Tholley">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Personal Info</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between">
-                                    <span><i class="fas fa-user me-2 text-primary"></i>Name:</span>
-                                    <span>Osman Tholley</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between">
-                                    <span><i class="fas fa-user me-2 text-primary"></i>Phone:</span>
-                                    <span>+23230497625</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between">
-                                    <span><i class="fas fa-envelope me-2 text-primary"></i>Email:</span>
-                                    <span>tholleyosman87@gmail.com</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between">
-                                    <span><i class="fas fa-map-marker-alt me-2 text-primary"></i>Location:</span>
-                                    <span>Freetown, Sierra Leone</span>
-                                </li>
-                            </ul>
-                            <div class="d-grid gap-2 mt-3">
-                                <a href="#contact" class="btn btn-primary">
-                                    <i class="fas fa-handshake me-2"></i>Hire Me
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        <section id="work" class="section section-work">
+            <div class="container">
+                <div class="section-topline"><span class="section-index">01 / SELECTED WORK</span><span class="section-note">A few things I’ve built and worked on</span></div>
+                <div class="section-heading-row"><h2>Selected <span class="accent-text">projects</span></h2><p>Web projects and practical network work, grounded in real-world needs.</p></div>
+                <div class="project-filters" role="group" aria-label="Filter projects">
+                    <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All work</button>
+                    <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web development</button>
+                    <button class="filter-button" type="button" data-filter="network" aria-pressed="false">Networking</button>
                 </div>
-                
-                <div class="col-lg-7">
-                    <div class="card border-0 shadow-sm h-100 about-body-card">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">Professional Profile</h3>
-                            <p class="card-text">
-                                I'm Osman Tholley, a network engineer, programmer, and website developer based in
-                                Freetown, Sierra Leone. I enjoy turning ideas into reliable systems and user-friendly
-                                digital products.
-                            </p>
-                            <p class="card-text">
-                                Teaching basic computing at Transit College Sierra Leone, Magburaka, where I strengthened my ability
-                                to explain complex topics clearly and work closely with people from different
-                                backgrounds.
-                            </p>
-                            <p class="card-text mb-3">
-                                Outside of technology, I enjoy volleyball and team activities, which keep me focused
-                                on collaboration and continuous improvement.
-                            </p>
-                            <ul class="card-text mb-0 feature-list">
-                                <li>Designing and maintaining secure, stable networks</li>
-                                <li>Building responsive websites with clean, modern interfaces</li>
-                                <li>Creating graphics and visual assets that support brands and projects</li>
-                            </ul>
-                            
-                            <div class="row mt-4 g-3">
-                                <div class="col-md-4">
-                                    <div class="card border-primary h-100 info-card info-card-primary">
-                                        <div class="card-body text-center">
-                                            <i class="fas fa-graduation-cap text-primary fa-3x mb-3"></i>
-                                            <h5>Education</h5>
-                                            <p class="mb-0">BSc Computer Science</p>
-                                            <small class="text-muted">University of Makeni (UNIMAK)</small>
-                                            <p class="mb-0">WASSCE</p>
-                                            <small class="text-muted">Service Senior Secondary School</small>
-                                            <p class="mb-0">BECE</p>
-                                            <small class="text-muted">Maggie Secondary School</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border-success h-100 info-card info-card-success">
-                                        <div class="card-body text-center">
-                                            <i class="fas fa-briefcase text-success fa-3x mb-3"></i>
-                                            <h5>Experience</h5>
-                                            <p class="mb-0">4+ Years</p>
-                                            <small class="text-muted">Programming & Networking</small>
-                                            <p class="mb-0">2+ Years</p>
-                                            <small class="text-muted">Teaching Basic Computer</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border-warning h-100 info-card info-card-warning">
-                                        <div class="card-body text-center">
-                                            <i class="fas fa-heart text-warning fa-3x mb-3"></i>
-                                            <h5>Interests</h5>
-                                            <p class="mb-0">Networking</p></br>
-                                            <p class="mb-0">Web Development</p></br>
-                                            <p class="mb-0">Programming</p></br>
-                                            <p class="mb-0">Graphic Design</p>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="row g-4 project-grid">
+                    <article class="col-md-6 project-item" data-category="web">
+                        <div class="project-card">
+                            <a class="project-image project-image-tall" href="https://spedmicsl.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit the SpedMicSL website">
+                                <img src="images/spedmic.png" alt="Screenshot of the SpedMicSL website" loading="lazy">
+                                <span class="image-link"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </a>
+                            <div class="project-body">
+                                <div class="project-meta"><span>WEB DEVELOPMENT</span><span>01</span></div>
+                                <h3>SpedMicSL learning platform</h3>
+                                <p>A responsive WordPress education platform with course management and student enrollment features.</p>
+                                <details class="case-study">
+                                    <summary>Case study <i class="fas fa-plus" aria-hidden="true"></i></summary>
+                                    <div class="case-study-content"><p><b>Goal</b> — make course information and enrollment accessible online.</p><p><b>Approach</b> — build on WordPress with responsive page layouts and education-focused course and enrollment features.</p><p><b>Outcome</b> — a live platform for students to explore courses and begin enrollment.</p></div>
+                                </details>
+                                <div class="project-footer"><div class="tech-list"><span>WordPress</span><span>Responsive UI</span></div><a href="https://spedmicsl.com/" target="_blank" rel="noopener noreferrer">Visit live <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div>
                             </div>
                         </div>
-                    </div>
+                    </article>
+                    <article class="col-md-6 project-item" data-category="network">
+                        <div class="project-card">
+                            <a class="project-image" href="images/network.png" target="_blank" rel="noopener noreferrer" aria-label="Open the network configuration project image">
+                                <img src="images/network.png" alt="Network infrastructure project visual" loading="lazy">
+                                <span class="image-link"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </a>
+                            <div class="project-body">
+                                <div class="project-meta"><span>NETWORK ENGINEERING</span><span>02</span></div>
+                                <h3>Small-business network setup</h3>
+                                <p>Network infrastructure work focused on secure configuration, router setup, and practical troubleshooting.</p>
+                                <details class="case-study">
+                                    <summary>Case study <i class="fas fa-plus" aria-hidden="true"></i></summary>
+                                    <div class="case-study-content"><p><b>Focus</b> — dependable network access for small-business environments.</p><p><b>Work</b> — router configuration, network setup, and troubleshooting, with attention to security and stability.</p><p><b>Engagement</b> — ongoing project work; contact me for further details.</p></div>
+                                </details>
+                                <div class="project-footer"><div class="tech-list"><span>Routing</span><span>Security</span><span>Troubleshooting</span></div><a href="#contact">Discuss a project <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-6 project-item" data-category="web">
+                        <div class="project-card">
+                            <a class="project-image" href="images/personal.png" target="_blank" rel="noopener noreferrer" aria-label="Open portfolio project image">
+                                <img src="images/personal.png" alt="Personal portfolio project preview" loading="lazy">
+                                <span class="image-link"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </a>
+                            <div class="project-body">
+                                <div class="project-meta"><span>WEB DEVELOPMENT</span><span>03</span></div>
+                                <h3>Personal portfolio</h3>
+                                <p>A responsive portfolio experience to introduce my work, share selected projects, and make it easy to get in touch.</p>
+                                <details class="case-study">
+                                    <summary>Case study <i class="fas fa-plus" aria-hidden="true"></i></summary>
+                                    <div class="case-study-content"><p><b>Goal</b> — bring development and networking work together in one clear portfolio.</p><p><b>Approach</b> — create a mobile-friendly single-page experience with project highlights, skills, and direct contact paths.</p><p><b>Focus</b> — clear navigation, readable content, and straightforward ways to start a conversation.</p></div>
+                                </details>
+                                <div class="project-footer"><div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="#home">Back to top <i class="fas fa-arrow-up" aria-hidden="true"></i></a></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-6 project-item" data-category="web">
+                        <div class="project-card project-card-note">
+                            <div class="project-note-visual"><span class="note-mark">&lt;/&gt;</span><span>YOUR NEXT<br>PROJECT?</span></div>
+                            <div class="project-body">
+                                <div class="project-meta"><span>OPEN FOR COLLABORATION</span><span>04</span></div>
+                                <h3>Let’s build something useful.</h3>
+                                <p>Have an idea for a website, a network challenge, or a digital project? Let’s talk about what you need.</p>
+                                <div class="project-footer"><div class="tech-list"><span>Web</span><span>Networks</span></div><a href="#contact">Start a conversation <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Work Section -->
-    <section id="work">
-        <div class="container py-5">
-            <h2 class="text-center mb-5 display-5 fw-bold section-heading">My <span class="text-primary">Projects</span></h2>
-            
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card border-0 shadow-sm h-100 project-card">
-                        <div class="card-img-top overflow-hidden">
-                            <img src="images/spedmic.png" class="img-fluid w-100" alt="SpedMicSL Website">
-                        </div>
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-start mb-3">
-                                <h4 class="card-title mb-0">SpedMicSL Website</h4>
-                                <span class="badge bg-primary">WordPress</span>
-                            </div>
-                            <p class="card-text">
-                                A fully responsive educational platform built with WordPress featuring 
-                                course management and student enrollment systems.
-                            </p>
-                            <div class="d-flex gap-2">
-                                <a href="https://spedmicsl.com/" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt me-1"></i> View Live
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <small class="text-muted">
-                                <i class="fas fa-calendar-alt me-1"></i> Completed: June 2023
-                            </small>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <div class="card border-0 shadow-sm h-100 project-card">
-                        <div class="card-img-top overflow-hidden">
-                            <img src="images/network.png" class="img-fluid w-100" alt="Network Configuration">
-                        </div>
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-start mb-3">
-                                <h4 class="card-title mb-0">Network Configuration</h4>
-                                <span class="badge bg-success">Networking</span>
-                            </div>
-                            <p class="card-text">
-                                Designed and implemented secure network infrastructure for small businesses, 
-                                including router configuration and network troubleshooting.
-                            </p>
-                            <div class="d-flex gap-2">
-                                <a href="#contact" class="btn btn-sm btn-outline-success">
-                                    <i class="fas fa-network-wired me-1"></i> View Details
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <small class="text-muted">
-                                <i class="fas fa-calendar-alt me-1"></i> Ongoing Project
-                            </small>
-                        </div>
+        <section id="about" class="section section-about">
+            <div class="container">
+                <div class="section-topline"><span class="section-index">02 / A LITTLE ABOUT ME</span><span class="section-note">People-first, systems-minded</span></div>
+                <div class="row align-items-center g-5 about-layout">
+                    <div class="col-lg-5"><div class="about-photo"><img src="images/Profile-.jpg" alt="Osman Tholley at work" loading="lazy"><span class="photo-caption">OSMAN THOLLEY · FREETOWN</span></div></div>
+                    <div class="col-lg-7">
+                        <h2>Good technology should feel <span class="accent-text">simple.</span></h2>
+                        <p class="about-lead">I’m a network engineer, programmer, and web developer who enjoys turning complex needs into reliable, approachable digital experiences.</p>
+                        <p class="body-muted">Based in Freetown, Sierra Leone, I work across web development and network infrastructure. I also teach basic computing at Transit College Sierra Leone, where I’ve learned to make technical ideas clear and useful to different people.</p>
+                        <div class="about-facts"><div><span class="fact-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></span><span><b>Computer Science</b><small>BSc, University of Makeni</small></span></div><div><span class="fact-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></span><span><b>Freetown, Sierra Leone</b><small>Available for remote work</small></span></div></div>
+                        <a class="text-link" href="#contact">More about working together <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-light">
-        <div class="container py-5">
-            <h2 class="text-center mb-5 display-5 fw-bold section-heading">My <span class="text-primary">Skills</span></h2>
-            
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card border-0 shadow-sm h-100 skill-card">
-                        <div class="card-header bg-white border-0">
-                            <h3 class="mb-0">
-                                <i class="fas fa-code text-primary me-2"></i>Development Skills
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Python</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-primary" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Java</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-primary" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>React</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-primary" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Next.js</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-primary" style="width: 75%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>HTML/CSS</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-primary" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="mb-0">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Networking (Routing, Switching, Security)</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-primary" style="width: 90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <div class="card border-0 shadow-sm h-100 skill-card">
-                        <div class="card-header bg-white border-0">
-                            <h3 class="mb-0">
-                                <i class="fas fa-paint-brush text-primary me-2"></i>Design & Tools
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="mb-4">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>Figma</span>
-                                    <span>88%</span>
-                                </div>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-success" style="width: 88%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-4">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>UI/UX Design</span>
-                                    <span>82%</span>
-                                </div>
-                                <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-success" style="width: 82%"></div>
-                                </div>
-                            </div>
-                            
-                            <h5 class="mt-4 mb-3">
-                                <i class="fas fa-users text-primary me-2"></i>Soft Skills
-                            </h5>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-light text-dark border">
-                                    <i class="fas fa-comments text-primary me-1"></i>Communication
-                                </span>
-                                <span class="badge bg-light text-dark border">
-                                    <i class="fas fa-people-arrows text-primary me-1"></i>Teamwork
-                                </span>
-                                <span class="badge bg-light text-dark border">
-                                    <i class="fas fa-lightbulb text-primary me-1"></i>Problem Solving
-                                </span>
-                                <span class="badge bg-light text-dark border">
-                                    <i class="fas fa-clock text-primary me-1"></i>Time Management
-                                </span>
-                                <span class="badge bg-light text-dark border">
-                                    <i class="fas fa-brain text-primary me-1"></i>Creativity
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+        <section id="skills" class="section section-skills">
+            <div class="container">
+                <div class="section-topline"><span class="section-index">03 / TOOLKIT</span><span class="section-note">What I bring to a project</span></div>
+                <div class="section-heading-row"><h2>Skills & <span class="accent-text">tools</span></h2><p>A practical mix of engineering, development, and design.</p></div>
+                <div class="row g-3 skills-grid">
+                    <div class="col-md-4"><div class="skill-panel"><span class="skill-number">01</span><i class="fas fa-network-wired skill-icon" aria-hidden="true"></i><h3>Networking</h3><p>Building and maintaining secure, stable network infrastructure.</p><div class="skill-tags"><span>Routing & switching</span><span>Network security</span><span>Troubleshooting</span></div></div></div>
+                    <div class="col-md-4"><div class="skill-panel"><span class="skill-number">02</span><i class="fas fa-laptop-code skill-icon" aria-hidden="true"></i><h3>Development</h3><p>Creating responsive web experiences and practical software.</p><div class="skill-tags"><span>HTML & CSS</span><span>JavaScript</span><span>Python</span><span>React</span><span>WordPress</span></div></div></div>
+                    <div class="col-md-4"><div class="skill-panel"><span class="skill-number">03</span><i class="fas fa-pen-ruler skill-icon" aria-hidden="true"></i><h3>Design & collaboration</h3><p>Making digital products clearer, more usable, and more cohesive.</p><div class="skill-tags"><span>Figma</span><span>UI/UX</span><span>Communication</span><span>Teamwork</span></div></div></div>
                 </div>
             </div>
-            
-            <div class="card border-0 shadow-sm mt-4 work-process-card">
-                <div class="card-header bg-white border-0">
-                    <h3 class="mb-0 text-center">
-                        <i class="fas fa-project-diagram text-primary me-2"></i>My Work Process
-                    </h3>
-                </div>
-                <div class="card-body">
-                    <div class="row text-center g-3">
-                        <div class="col-md-3">
-                            <div class="p-3 border rounded-circle d-inline-block mb-2 bg-primary text-white process-icon">
-                                <i class="fas fa-search fa-2x"></i>
-                            </div>
-                            <h5>Research</h5>
-                            <p class="small">Understanding requirements and target audience</p>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="p-3 border rounded-circle d-inline-block mb-2 bg-primary text-white process-icon">
-                                <i class="fas fa-project-diagram fa-2x"></i>
-                            </div>
-                            <h5>Planning</h5>
-                            <p class="small">Creating wireframes and architecture</p>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="p-3 border rounded-circle d-inline-block mb-2 bg-primary text-white process-icon">
-                                <i class="fas fa-code fa-2x"></i>
-                            </div>
-                            <h5>Development</h5>
-                            <p class="small">Coding with best practices</p>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="p-3 border rounded-circle d-inline-block mb-2 bg-primary text-white process-icon">
-                                <i class="fas fa-check-circle fa-2x"></i>
-                            </div>
-                            <h5>Testing</h5>
-                            <p class="small">Ensuring quality and performance</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container py-5">
-            <h2 class="text-center mb-5 display-5 fw-bold section-heading">Get In <span class="text-primary">Touch</span></h2>
-            
-            <div class="row g-4">
-                <div class="col-lg-5">
-                    <div class="card border-0 shadow-sm h-100 contact-card">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">Contact Information</h3>
-                            
-                            <div class="d-flex align-items-start mb-4">
-                                <div class="p-3 bg-primary bg-opacity-10 text-primary rounded-circle me-3 contact-icon">
-                                    <i class="fas fa-envelope fa-lg"></i>
-                                </div>
-                                <div>
-                                    <h5 class="mb-1">Email</h5>
-                                    <p class="mb-0">tholleyosman87@gmail.com</p>
-                                    <p class="mb-0">osmandtholley@gmail.com</p>
-                                </div>
-                            </div>
-                            
-                            <div class="d-flex align-items-start mb-4">
-                                <div class="p-3 bg-success bg-opacity-10 text-success rounded-circle me-3 contact-icon">
-                                    <i class="fas fa-phone fa-lg"></i>
-                                </div>
-                                <div>
-                                    <h5 class="mb-1">Phone</h5>
-                                    <p class="mb-0">+232 30-497-625</p>
-                                    <p class="mb-0">+232 74-604-922</p>
-                                    <a href="https://wa.me/23230497625" class="btn btn-success btn-sm mt-2" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-whatsapp me-1"></i>Chat on WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <div class="d-flex align-items-start">
-                                <div class="p-3 bg-warning bg-opacity-10 text-warning rounded-circle me-3 contact-icon">
-                                    <i class="fas fa-map-marker-alt fa-lg"></i>
-                                </div>
-                                <div>
-                                    <h5 class="mb-1">Location</h5>
-                                    <p class="mb-0">Block E1, Wilberforce Barracks</p>
-                                    <p class="mb-0">Freetown, Sierra Leone</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-7">
-                    <div class="card border-0 shadow-sm contact-form-card">
-                        <div class="card-body p-4">
-                            <h3 class="card-title mb-4">Send Me a Message</h3>
-                            <form class="contact-form" id="portfolio-form">
+        <section id="contact" class="section section-contact">
+            <div class="container">
+                <div class="contact-panel">
+                    <div class="section-topline"><span class="section-index">04 / CONTACT</span><span class="section-note">Have something in mind?</span></div>
+                    <div class="row g-5 align-items-start">
+                        <div class="col-lg-5"><p class="eyebrow">LET’S MAKE IT REAL</p><h2>Let’s talk about<br><span class="accent-text">your project.</span></h2><p class="body-muted">Tell me a little about what you’re working on. Choose email or WhatsApp and your message will be prepared for you to review and send.</p><a class="contact-email" href="mailto:tholleyosman87@gmail.com">tholleyosman87@gmail.com <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a><p class="contact-location"><i class="fas fa-location-dot" aria-hidden="true"></i> Freetown, Sierra Leone</p></div>
+                        <div class="col-lg-7">
+                            <form id="contact-form" class="contact-form">
                                 <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <label for="name" class="form-label">Your Name</label>
-                                        <input type="text" class="form-control" id="name" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="email" class="form-label">Your Email</label>
-                                        <input type="email" class="form-control" id="email" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="subject" class="form-label">Subject</label>
-                                        <input type="text" class="form-control" id="subject">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="message" class="form-label">Message</label>
-                                        <textarea class="form-control" id="message" rows="5" required></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="submit" class="btn btn-primary px-4">
-                                            <i class="fab fa-whatsapp me-2"></i>Send via WhatsApp
-                                        </button>
-                                    </div>
+                                    <div class="col-sm-6"><label for="name" class="form-label">Your name</label><input class="form-control" type="text" id="name" name="name" autocomplete="name" maxlength="100" required></div>
+                                    <div class="col-sm-6"><label for="email" class="form-label">Email address</label><input class="form-control" type="email" id="email" name="email" autocomplete="email" maxlength="150" required></div>
+                                    <div class="col-12"><label for="subject" class="form-label">What’s this about?</label><input class="form-control" type="text" id="subject" name="subject" maxlength="120" placeholder="Website, network setup, collaboration…" required></div>
+                                    <div class="col-12"><label for="message" class="form-label">Your message</label><textarea class="form-control" id="message" name="message" rows="5" maxlength="2000" placeholder="A few details about your project or question…" required></textarea></div>
+                                    <div class="col-12"><p class="form-hint">Your email app or WhatsApp will open with your message ready. Nothing is sent until you review and press send.</p><div class="contact-actions"><button class="button button-primary" type="submit" data-contact-method="email"><i class="fas fa-envelope" aria-hidden="true"></i> Email me</button><button class="button button-whatsapp" type="submit" data-contact-method="whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i> Send with WhatsApp</button></div><p id="form-status" class="form-status" role="status" aria-live="polite"></p></div>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <div class="chat-widget">
-        <button type="button" class="btn btn-primary rounded-circle chat-toggle" aria-label="Open chat widget">
-            <i class="fas fa-comments"></i>
-        </button>
-        <div class="chat-panel shadow-lg">
-            <div class="chat-panel-header d-flex justify-content-between align-items-center">
-                <div>
-                    <h6 class="mb-0">Chat with Osman</h6>
-                    <small class="text-muted">Typically replies quickly</small>
-                </div>
-                <button type="button" class="btn-close chat-close" aria-label="Close"></button>
-            </div>
-            <div class="chat-panel-body">
-                <p class="small mb-3">
-                    Send me a message and I will reply on WhatsApp. You can also request a video call.
-                </p>
-                <div class="d-grid gap-2">
-                    <button type="button" class="btn btn-success btn-sm chat-whatsapp">
-                        <i class="fab fa-whatsapp me-1"></i>Chat on WhatsApp
-                    </button>
-                    <button type="button" class="btn btn-outline-primary btn-sm chat-video">
-                        <i class="fas fa-video me-1"></i>Request Video Call
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-                <div class="mb-3 mb-md-0">
-                    <a class="navbar-brand fw-bold" href="#">
-                        <span class="text-primary">OT</span> Osman Tholley
-                    </a>
-                    <p class="mb-0 small">Network Engineer & Web Developer</p>
-                </div>
-                <div class="d-flex gap-3 social-icons-footer">
-                    <a href="https://github.com/OsmanTholley" class="text-white" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github fa-lg"></i>
-                    </a>
-                    <a href="https://wa.me/23230497625" class="text-success" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-whatsapp fa-lg"></i>
-                    </a>
-                    <a href="https://facebook.com" class="text-primary" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-facebook fa-lg"></i>
-                    </a>
-                </div>
-            </div>
-            <hr class="my-3 opacity-10">
-            <div class="text-center small">
-                <p class="mb-0">&copy; <span id="year"></span> Osman Tholley. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <footer class="site-footer"><div class="container"><div class="footer-inner"><a class="navbar-brand brand-mark" href="#home"><span>OT</span><b>Osman Tholley</b></a><p>Network engineer · Web developer · Freetown, SL</p><div class="footer-social"><a href="https://github.com/OsmanTholley" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a><a href="https://wa.me/23230497625" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp contact"><i class="fab fa-whatsapp" aria-hidden="true"></i></a><a href="mailto:tholleyosman87@gmail.com" aria-label="Email Osman"><i class="fas fa-envelope" aria-hidden="true"></i></a></div></div><div class="footer-bottom"><span>© <span id="year"></span> Osman Tholley</span><a href="#home">Back to top ↑</a></div></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
